@@ -22,7 +22,6 @@
 
         img {
             width: 100px;
-            /* height: 100px; */
         }
     </style>
 </head>
@@ -76,20 +75,21 @@
 
     ];
     ?>
-    <!-- Pas de code hieronder aan  -->
-    <!-- Loop door de array $nieuwsberichten en toon de gegevens in de juist HTML-tags  -->
 
+<?php
 
-    <h1></h1>
-    <div class="content">
+foreach ($nieuwsberichten as $key => $categorie) {
+    echo "<h1>" . $key . "</h1>" . "<br>";
+    echo '<div class="content">';
 
-        <h2 class="title"></h2>
-        <p class="title"></p>
-        <img src="" class="title">
+    echo $categorie[0]['beschrijving'] . "<br>";
+    echo $categorie[0]['image'] . "<br>";
+    echo '<h2 class="title">' . $categorie[0]["titel"] . "</h2>";
+    echo '<img src="' . $categorie[0]['image'] . '"class="title">';
+    echo "</div>";
+}
 
-    </div>
-
-
+?>
 </body>
 
 </html>
