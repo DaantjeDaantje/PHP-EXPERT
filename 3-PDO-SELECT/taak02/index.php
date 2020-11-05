@@ -3,6 +3,7 @@
 <html>
 
 <body>
+
 	<?php		
 	$database_lokatie     = 'localhost';
 	$database_naam        = 'ja';
