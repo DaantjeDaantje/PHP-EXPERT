@@ -40,7 +40,7 @@ Binnen programmeertalen zijn er ook objecten. Vaak krijg je die van de bedenkers
 Bij programmeren maken we altijd eerst een tekening om daarna een object te maken. Zo'n _tekening_ noemmen we een **class**. Als we een class van een student willen maken dan ziet dat er zo uit
 
 ```php
-class Student(){
+class Student(
 
 }
 ```
@@ -48,11 +48,11 @@ class Student(){
 Willen we properties toevoegen aan de student-bouwtekening dan kunnen we dat zo doen:
 
 ```php
-class Student(){
-  $voornaam;
-  $achternaam;
-  $leeftijd;
-  $studentnummer;
+class Student{
+  public $voornaam;
+  public $achternaam;
+  public $leeftijd;
+  public $studentnummer;
 }
 ```
 
@@ -61,11 +61,11 @@ class Student(){
 Oké, je hebt nu een mooie bouwtekening gemaakt. Deze **class** gaan we omzetten in een **object**
 
 ```php
-class Student(){//bouwtekening
-  $voornaam;
-  $achternaam;
-  $leeftijd;
-  $studentnummer;
+class Student{//bouwtekening
+  public $voornaam;
+  public $achternaam;
+  public $leeftijd;
+  public $studentnummer;
 }
 
 $nieuweStudent = new Student(); //met het woordje new maken we een nieuw object. Zet (net als bij een functie) haakjes achter de naam van het object
@@ -80,11 +80,11 @@ $nogEenNieuweStudent = new Student(); //en nu hebben we nog een student-object g
 
 ## Opdracht
 
-> 1. Maak een class __auto__
+> 1. Maak een class **auto**
 > 2. Geef de volgende properties aan de auto: merk, kleur, type, uitvoering, brandstof
 > 3. Maak van de class twee objecten, ofwel maak een auto-object. Gebruik de variable $nieuweAuto en $nogEenAndereAuto
 
 ## Bronnen
 
-> * [Geek For Geeks - PHP | Classes](https://www.geeksforgeeks.org/php-classes/)
-> * [Geek For Geeks - PHP | Objects](https://www.geeksforgeeks.org/php-objects/)
+> - [Geek For Geeks - PHP | Classes](https://www.geeksforgeeks.org/php-classes/)
+> - [Geek For Geeks - PHP | Objects](https://www.geeksforgeeks.org/php-objects/)

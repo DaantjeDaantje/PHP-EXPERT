@@ -21,9 +21,10 @@ Je moet eerst voor jezelf bepalen welke rij je wilt aanpassen. Deze data moet je
 ```php
 
 //UPDATE EEN WAARDE IN EEN DATABASE TABEL
-$sql = "UPDATE users SET firstname = :ph_firstname";
+$sql = "UPDATE users SET firstname = :ph_firstname WHERE id = :id";
 $stmt = $db_conn->prepare($sql); //stuur naar mysql.
 $stmt->bindParam(":firstname", $form_firstname );
+$stmt->bindParam(":id", $form_id );
 $stmt->execute();
 
 ```

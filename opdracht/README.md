@@ -1,14 +1,14 @@
 # PHP-EXPERT Moduleopdracht
 
-## Voetbalclub ASD `20
+## Superheroes
 
 ## Toelichting
 
-De voetbalclub moet een administratiesysteem hebben van wie in welk team speelt maar ook of het lid betaald heeft of niet. Kortom een administratiesysteem voor leden. Daarnaast wil de club ook verschillende totaaloverzichten kunnen maken van de verschillende teams.
+Soms heb je te maken met heel veel data. Soms heb je te maken met hele grote databases. In deze opdracht ga je met een grote dataset werken.
 
 ## Leerdoelen
 
-> 1. [ ] Ik maak een applicatie om de leden administratie van de voetbalclub te kunnen beheren
+> 1. [ ] Ik maak een webapplicatie waarbij superhelden centraal staan.
 
 ## Opdracht
 
@@ -16,36 +16,18 @@ De voetbalclub moet een administratiesysteem hebben van wie in welk team speelt 
 
 ### Database
 
-- [ ] Maak een database: `voetbalclubASD`
-
-- [ ] Maak een database tabel: `gebruikers`
-- [ ] Maak de volgende _kolommen_ aan:
-      - id (int:11)
-      - voornaam (varchar:100)
-      - achternaam (varchar:100)
-      - email (varchar:200)
-      - wachtwoord (varchar:60)
-      - team (int:3)
-      - contributie (int:1)
-- [ ] Zet gegevens in deze tabel.
-
-- [ ] Maak nog een tabel: `teams`
-- [ ] Maak de volgende _kolommen_ aan:
-  - id (int:11)
-  - naam (varchar:100)
-- [ ] Zet zelf bedachte gegevens in deze tabel.
-
-- [ ] Maak een database bestand: db.conn.php
-- [ ] Maak een pagina om alle leden te kunnen tonen (overzichtspagina met een tabel)
-- [ ] Maak een pagina om teams te kunnen bekijken   (overzichtspagina met een tabel)
-- [ ] Maak een pagina om de gegevens van een enkele gebruiker te kunnen tonen (overzicht van een enkele rij)
-- [ ] Maak een pagina om de gegevens van een enkel team te kunnen tonen       (overzicht van een enkele rij)
-- [ ] Maak op elke regel van de eerder gemaakte tabellen een link waarmee je de rij kunt verwijderen
-- [ ] Maak een nog link op de gegenereerde rijen om naar een aparte pagina te gaan om deze data te kunnen updaten.
+1. [ ] Maak een database: `phpexpert`
+2. [ ] Importeer het bestand `superheroes.sql` in je database
+3. [ ] Maak een php bestand: `database.php` en zet hierin code om een database connectie te maken (gebruik PDO)
+4. [ ] Maak een `superheroes_index.php` waarbij de kolommen `Title`, `Àlignment` van tabel `superheroes` __toond__. Stijl de tabel (mag met [Bootstrap](https://getbootstrap.com))
+5. [ ] Maak op de bovengenoemde tabel een link of een knop waarmee naar de pagina gaat om een individuele superhero kunt bekijken in detail
+6. [ ] Maak een pagina `superheroes_show.php` waarme je de gegevens van een individuele superhero kunt __bekijken__
+7. [ ] Maak een pagina `superheros_edit.php` waarmee je de gegevens van een individuele superhero kunt __updaten/wijzigen__.
+8. [ ] Maak een pagina `superheroes_delete.php` waarmee je een individuele superhero kunt __verwijderen__.
 
 ## Eindresultaat
 
-Het eindresultaat is een volledig werkende webapplicatie die de overzichten van `teams` en van `gebruikers` kan tonen. Daarnaast ook de _profiel_ pagina's van individuele entiteiten.
+Het eindresultaat is een volledig werkende webapplicatie die de overzichten van `superheros` kan tonen. Daarnaast ook de _profiel_ pagina's van individuele entiteiten. Je kunt de verschilledne entitieiten verwijderen, aanpassen en toevoegen.
 
 ## Bronnen
 

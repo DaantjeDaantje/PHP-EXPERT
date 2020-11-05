@@ -12,9 +12,10 @@ Eerst de volledige code:
 
 ```php
 $sql = 'SELECT * FROM users WHERE email = :email AND status= :status';
-$database_connectie->prepare($sql);
+$statement = $database_connectie->prepare($sql);
 $statement->bindParam(":email", $email);
 $statement->bindParam(":status", $status);
+$statement->execute();
 $user = $statement->fetch();
 ```
 

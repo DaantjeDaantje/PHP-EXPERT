@@ -35,7 +35,7 @@ De query method geeft een `$statement` object terug waarmee je de gegevens kunt 
 ```php
 
 $sql = "SELECT * FROM users";
-$statement = $db_conn->prepare($sql); //haal alle gebruikers op uit de database toolsforever
+$statement = $database_connectie->prepare($sql); //haal alle gebruikers op uit de database toolsforever
 $statement->execute();
 $database_gegevens = $statement->fetchAll(PDO::FETCH_ASSOC);
 
