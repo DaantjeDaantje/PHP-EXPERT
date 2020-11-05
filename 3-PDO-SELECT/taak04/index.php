@@ -5,6 +5,7 @@
 <body>
 	<?php
 	$host = 'localhost';
+	
 	$db   = 'ja';
 	$user = 'root';
 	$pass = '';
