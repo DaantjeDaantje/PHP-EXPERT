@@ -1,8 +1,4 @@
 <?php
-	$host = 'localhost';
-	$db   = 'phpexpert';
-	$user = 'root';
-	$pass = '';
-	
-    $db_conn = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
+$connection = mysqli_connect("localhost", "root", "");
+$db = mysqli_select_db($connection, "phpexpert")
 ?>

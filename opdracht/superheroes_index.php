@@ -13,9 +13,8 @@
 <body>
 	<?php
         $sql = "SELECT * FROM superheroes limit 25";
-        $statement = $db_conn->prepare($sql);
-        $statement->execute();
-        $database_gegevens = $statement->fetchAll(PDO::FETCH_ASSOC);
+        $query = "SELECT * FROM `superheroes`";
+        $query_run = mysqli_query($connection, $query);
         ?>
     
     <body>
@@ -29,13 +28,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <?php foreach($database_gegevens as $item) : ?>
+                <?php
+                while($row = mysqli_fetch_array($query_run)){
+                        ?>
                         <tr>
-                            <td><?php echo $item['ID'] ?></td>
-                            <td><?php echo $item['Title'] ?></td>
-                            <td><?php echo $item['Alignment'] ?></td>
+                            <td><?php echo $row['ID']; ?></td>
+                            <td><?php echo $row['Title']; ?></td>
+                            <td><?php echo $row['Alignment']; ?></td>
                         </tr>
-                    <?php endforeach; ?>
+                        <?php
+                    }
+                    ?>
                 </tbody>
             </table>
         </div>
