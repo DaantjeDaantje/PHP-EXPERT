@@ -57,7 +57,7 @@
                             <td><?php echo $row['PlaceOfDeath']; ?></td>
                             <td><?php echo $row['Citizenship']; ?></td>
                             <td><?php echo $row['Occupation']; ?></td>
-                            <td><a href="edit.php?edit_ID="<?php echo $row['ID']; ?> alt="edit" >Edit</a></td>
+                            <td><a href="edit.php?edit_ID=<?php echo $row['ID']; ?>" alt="edit" >Edit</a></td>
                         </tr>
 
                         <?php
